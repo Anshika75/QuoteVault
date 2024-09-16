@@ -3,14 +3,10 @@
   <section>
     <div class="tag-box">
 
-      <app-tags [tag]="tag[0]" />
-      <app-tags [tag]="tag[1]" />
-      <app-tags [tag]="tag[2]" />
-      <app-tags [tag]="tag[3]" />
-      <app-tags [tag]="tag[4]" />
-      <app-tags [tag]="tag[5]" />
-      <app-tags [tag]="tag[6]" />
+      @for (tag of tag; track tag.id) {
+          <app-tags [tag]="tag" />
+      }
     </div>
-    <app-quote-box/>
+    <app-quote-box />
   </section>
 </main>
