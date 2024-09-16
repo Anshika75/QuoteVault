@@ -10,11 +10,12 @@ main{
 }
 section{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content:center;
     align-items: center;
     margin-top: 100px;
     width: 100%;
+    column-gap: 45px;
 }
 section .tag-box{
     display: flex;
