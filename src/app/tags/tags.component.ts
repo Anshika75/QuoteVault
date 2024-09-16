@@ -1,13 +1,13 @@
 import { Component, Input } from '@angular/core';
-import { Tag } from './tag.model';
+import { TagType } from './tag.model';
 
 @Component({
   selector: 'app-tags',
   standalone: true,
   imports: [],
   templateUrl: './tags.component.html',
-  styleUrl: './tags.component.css'
+  styleUrls: ['./tags.component.css']  // Fixed property name
 })
 export class TagsComponent {
-  @Input({required:true}) tag!: Tag;
+  @Input({ required: true }) tag!: TagType;
 }

@@ -1,0 +1,17 @@
+.tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    color: #310c56;
+    border-radius: 5px;
+    padding: 7px 10px;
+    margin: 7px 0px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s;
+}
+.tag:hover{
+    background-color: #310c56;
+    color: #f1f1f1;
+}

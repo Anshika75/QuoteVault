@@ -1,4 +1,4 @@
-export const tags = [
+export const TagData = [
     { "id": 1, "name": "Inspiration" },
     { "id": 2, "name": "Humor" },
     { "id": 3, "name": "Perseverance" },
