@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-quote-box',
@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './quote-box.component.css'
 })
 export class QuoteBoxComponent {
-
+  
+  @Input() id!: number | undefined;
+  @Input() name: string | undefined;
 }

@@ -4,11 +4,11 @@
     <div class="tag-box">
 
       @for (tag of tag; track tag.id) {
-          <app-tags [tag]="tag" />
+          <app-tags [tag]="tag" (tagSelected)="onSelectedTag($event)" />
       }
     </div>
     <div class="quote-main">
-      <app-quote-box />
+      <app-quote-box [id] = "selectedTagId" [name]="selectedTag?.name ? selectedTag?.name : 'Random'" />
     </div>
   </section>
 </main>
