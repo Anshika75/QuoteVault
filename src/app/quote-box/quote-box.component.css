@@ -1,14 +1,15 @@
 #quote-box{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.15);
-    padding: 20px;
+    padding: 40px 20px;
     width: 100%;
     text-align: center;
     height: 60vh;
     max-height: 60vh;
+    overflow-y: scroll ;
 }

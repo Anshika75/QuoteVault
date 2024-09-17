@@ -1,0 +1,39 @@
+.quote{
+    min-height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 12px;
+    padding-top: 15px;
+    position: relative;
+}
+.quote .icon{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-40%);
+    background: #310c56;
+    z-index: 20;
+    color: #fff;
+    height: 60px;
+    width: 60px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    font-size: 2rem;
+}
+.quote .quote-text{
+    font-size: 1.25rem;
+    color: #1d013a;
+    margin-top: 20px;
+}
+
+.quote .author{
+    font-size: 1rem;
+    color: #310c56;
+    margin-top: 12px;
+}
