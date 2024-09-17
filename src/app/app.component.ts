@@ -16,7 +16,7 @@
     tag = TagData;
     selectedTagId?: number;
     get selectedTag() {
-      return this.tag.find(tag => tag.id === this.selectedTagId);
+      return this.tag.find(tag => tag.tagId === this.selectedTagId);
     }
     onSelectedTag(tagId: number) {
       this.selectedTagId = tagId;

@@ -13,6 +13,6 @@ export class TagsComponent {
   @Output() tagSelected = new EventEmitter<number>();  // Emit tag id, which is a number
 
   onSelectedTag() {
-    this.tagSelected.emit(this.tag.id);  // Emit the tag's id
+    this.tagSelected.emit(this.tag.tagId);  // Emit the tag's id
   }
 }

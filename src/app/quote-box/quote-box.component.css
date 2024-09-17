@@ -1,6 +1,5 @@
 #quote-box{
     display: grid;
-    place-items: center;
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px 20px;
     background-color: #fff;
@@ -12,4 +11,5 @@
     height: 60vh;
     max-height: 60vh;
     overflow-y: scroll ;
+    width: 100%;
 }

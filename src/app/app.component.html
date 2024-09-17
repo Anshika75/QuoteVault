@@ -3,7 +3,7 @@
   <section>
     <div class="tag-box">
 
-      @for (tag of tag; track tag.id) {
+      @for (tag of tag; track tag.tagId) {
           <app-tags [tag]="tag" (tagSelected)="onSelectedTag($event)" />
       }
     </div>

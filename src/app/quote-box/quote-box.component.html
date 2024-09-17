@@ -1,13 +1,5 @@
 <section id="quote-box">
-    <app-quote/>
-    <app-quote/>
-    <app-quote/>
-    <app-quote/>
-    <app-quote/>
-    <app-quote/>
-    <app-quote/>
-    <app-quote/>
-    <app-quote/>
-    <app-quote/>
-    <app-quote/>
+    @for (quote of SelectedTagQuote; track quote.id) {
+        <app-quote [quote] = "quote" />
+    }
 </section>

@@ -1,10 +1,10 @@
 export const TagData = [
-    { "id": 1, "name": "Inspiration" },
-    { "id": 2, "name": "Humor" },
-    { "id": 3, "name": "Perseverance" },
-    { "id": 4, "name": "Life" },
-    { "id": 5, "name": "Success" },
-    { "id": 6, "name": "Love" },
-    { "id": 7, "name": "Wisdom" }
+    { "tagId": 1, "name": "Inspiration" },
+    { "tagId": 2, "name": "Humor" },
+    { "tagId": 3, "name": "Perseverance" },
+    { "tagId": 4, "name": "Life" },
+    { "tagId": 5, "name": "Success" },
+    { "tagId": 6, "name": "Love" },
+    { "tagId": 7, "name": "Wisdom" }
   ]
   

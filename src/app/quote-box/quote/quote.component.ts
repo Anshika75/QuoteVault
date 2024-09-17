@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { QuoteType } from './quote.model';
 
 @Component({
   selector: 'app-quote',
@@ -7,6 +8,6 @@ import { Component } from '@angular/core';
   templateUrl: './quote.component.html',
   styleUrl: './quote.component.css'
 })
-export class QuoteComponent {
-
+export class QuoteComponent {  
+  @Input({ required: true }) quote!: QuoteType;
 }
