@@ -17,4 +17,24 @@
     max-height: 60vh;
     overflow-y: scroll ;
     width: 100%;
+    position: relative;
+}
+
+button{
+    background-color: #310c56;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1.2rem;
+}
+
+button:hover{
+    background-color: #d9cce8;
+    color: #310c56;
 }

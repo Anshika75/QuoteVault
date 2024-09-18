@@ -1,9 +1,11 @@
 <section id="quote-box">
+    <div class="header">
+        <h2>#{{name}} Quotes</h2>
+        <button>
+            <i class="fa-solid fa-plus"></i>
+        </button>
+    </div>
     @for (quote of selectedTagQuote; track quote.id) {
-        <app-quote [quote] = "quote" (delete)="onDeleteQuote($event)"/>
+    <app-quote [quote]="quote" (delete)="onDeleteQuote($event)" />
     }
-    <button>
-        <i class="fa-solid fa-plus"></i>
-    </button>
 </section>
-
