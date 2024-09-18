@@ -13,11 +13,13 @@ import { TagsComponent } from '../tags/tags.component';
 export class QuoteBoxComponent {
   @Input() tagId!: number | undefined;
   @Input() name: string | undefined;
+  @Input() tagSelected: number | undefined;
   // selectedTagId?: number;
   quote = QuoteData;
 
   // Fix the filtering logic to filter by tagId, not quote id
   get selectedTagQuote() {
+    // return this.quote.filter((quote) => quote.tagId === this.tagSelected);
     return this.quote.filter((quote) => quote.tagId === this.tagId);
     // return this.quote.filter((quote) => quote.tagId === this.selectedTagId);
   }
