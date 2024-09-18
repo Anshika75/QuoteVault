@@ -2,5 +2,8 @@
     @for (quote of selectedTagQuote; track quote.id) {
         <app-quote [quote] = "quote" (delete)="onDeleteQuote($event)"/>
     }
+    <button>
+        <i class="fa-solid fa-plus"></i>
+    </button>
 </section>
 
