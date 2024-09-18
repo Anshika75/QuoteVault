@@ -1,6 +1,6 @@
 <section id="quote-box">
     @for (quote of selectedTagQuote; track quote.id) {
-        <app-quote [quote] = "quote" />
+        <app-quote [quote] = "quote" (delete)="onDeleteQuote($event)"/>
     }
 </section>
 
