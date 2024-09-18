@@ -38,3 +38,8 @@
     color: #310c56;
     margin-top: 12px;
 }
+
+.active{
+    background-color: #310c56;
+    color: #fff;
+}
