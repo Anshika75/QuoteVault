@@ -4,7 +4,7 @@
     <div class="tag-box">
 
       @for (tag of tag; track tag.tagId) {
-          <app-tags [tag]="tag" (tagSelected)="onSelectedTag($event)" />
+          <app-tags [selected]="tag.tagId === selectedTagId" [tag]="tag" (tagSelected)="onSelectedTag($event)" />
       }
     </div>
     <div class="quote-main">
