@@ -14,7 +14,7 @@
   export class AppComponent {
     title = 'quote';
     tag = TagData;
-    selectedTagId?: number;
+    selectedTagId = 1;
     get selectedTag() {
       return this.tag.find(tag => tag.tagId === this.selectedTagId);
     }
