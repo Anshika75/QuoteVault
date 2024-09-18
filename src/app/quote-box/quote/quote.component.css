@@ -43,3 +43,23 @@
     background-color: #310c56;
     color: #fff;
 }
+
+.dlt{
+    background: #d9cce8;
+    color: #310c56;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.dlt:hover{
+    background: #310c56;
+    color: #fff;
+}
