@@ -23,4 +23,9 @@ export class QuoteBoxComponent {
     return this.quote.filter((quote) => quote.tagId === this.tagId);
     // return this.quote.filter((quote) => quote.tagId === this.selectedTagId);
   }
+
+  
+  onDeleteQuote(quoteId: number) {
+    this.quote = this.quote.filter((quote) => quote.id !== quoteId);
+  }
 }
