@@ -5,7 +5,9 @@
             <i class="fa-solid fa-plus"></i>
         </button>
     </div>
-    @for (quote of selectedTagQuote; track quote.id) {
-    <app-quote [quote]="quote" (delete)="onDeleteQuote($event)" />
-    }
+    <div class="grid-box">
+        @for (quote of selectedTagQuote; track quote.id) {
+            <app-quote [quote]="quote" (delete)="onDeleteQuote($event)" />
+            }
+    </div>
 </section>
