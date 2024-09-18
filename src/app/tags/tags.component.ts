@@ -10,6 +10,7 @@ import { TagType } from './tag.model';
 })
 export class TagsComponent {
   @Input({ required: true }) tag!: TagType;
+  @Input({required:true}) selected!: boolean;
   @Output() tagSelected = new EventEmitter<number>();  // Emit tag id, which is a number
 
   onSelectedTag() {
