@@ -1,21 +1,16 @@
 <div class="backdrop"></div>
-<main>
-    <dialog open>
-        <h2>Add Task</h2>
+<main class="dialog-container">
+    <div class="dialog">
+        <h2>Add Quote</h2>
         <form>
           <p>
-            <label for="title">Title</label>
-            <input type="text" id="title" name="title" />
+            <label for="author">Author</label>
+            <input type="text" id="author" name="author" />
           </p>
       
           <p>
-            <label for="summary">Summary</label>
-            <textarea id="summary" rows="5" name="summary" ></textarea>
-          </p>
-      
-          <p>
-            <label for="due-date">Due Date</label>
-            <input type="date" id="due-date" name="due-date" />
+            <label for="quote">Quote</label>
+            <textarea id="quote" rows="5" name="quote" ></textarea>
           </p>
       
           <p class="actions">
@@ -23,5 +18,5 @@
             <button type="submit">Create</button>
           </p>
         </form>
-      </dialog>
+      </div>
 </main>
