@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-new-quote',
@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './new-quote.component.css'
 })
 export class NewQuoteComponent {
+  @Output() close = new EventEmitter<void>();
 
+  onClose() {
+    this.close.emit();
+  }
 }
