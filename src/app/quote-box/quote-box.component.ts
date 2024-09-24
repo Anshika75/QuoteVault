@@ -2,11 +2,12 @@ import { Component, Input } from '@angular/core';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteData } from './quote/quote';
 import { TagsComponent } from '../tags/tags.component';
+import { NewQuoteComponent } from "./new-quote/new-quote.component";
 
 @Component({
   selector: 'app-quote-box',
   standalone: true,
-  imports: [QuoteComponent, TagsComponent],
+  imports: [QuoteComponent, TagsComponent, NewQuoteComponent],
   templateUrl: './quote-box.component.html',
   styleUrls: ['./quote-box.component.css']
 })
