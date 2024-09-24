@@ -2,7 +2,7 @@
     <div class="backdrop" (click)="onClose()"></div>
     <div class="dialog">
         <h2>Add Quote</h2>
-        <form>
+        <form (ngSubmit)="onSubmit()">
           <p>
             <label for="author">Author</label>
             <input type="text" id="author" name="author" [(ngModel)]="enteredAuthor" />
