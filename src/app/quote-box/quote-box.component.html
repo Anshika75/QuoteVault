@@ -1,5 +1,5 @@
 @if(isAddingQuote){
-    <app-new-quote />
+    <app-new-quote (close)="onCanceledAddingQuote()" />
 }
 <section id="quote-box">
     <div class="header">
