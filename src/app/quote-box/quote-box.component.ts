@@ -30,6 +30,9 @@ export class QuoteBoxComponent {
     this.isAddingQuote = true;
   }
 
+  onCanceledAddingQuote() {
+    this.isAddingQuote = false;
+  }
   
   onDeleteQuote(quoteId: number) {
     this.quote = this.quote.filter((quote) => quote.id !== quoteId);
