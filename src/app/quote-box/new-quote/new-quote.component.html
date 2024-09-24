@@ -5,12 +5,12 @@
         <form>
           <p>
             <label for="author">Author</label>
-            <input type="text" id="author" name="author" />
+            <input type="text" id="author" name="author" [(ngModel)]="enteredAuthor" />
           </p>
       
           <p>
             <label for="quote">Quote</label>
-            <textarea id="quote" rows="5" name="quote" ></textarea>
+            <textarea id="quote" rows="5" name="quote" [(ngModel)]="enteredQuote" ></textarea>
           </p>
       
           <p class="actions">
