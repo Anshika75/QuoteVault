@@ -1,5 +1,5 @@
 <main class="dialog-container">
-    <div class="backdrop"></div>
+    <div class="backdrop" (click)="onClose()"></div>
     <div class="dialog">
         <h2>Add Quote</h2>
         <form>
@@ -14,7 +14,7 @@
           </p>
       
           <p class="actions">
-            <button type="button">Cancel</button>
+            <button type="button" (click)="onClose()">Cancel</button>
             <button type="submit">Create</button>
           </p>
         </form>
